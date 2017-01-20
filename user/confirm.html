@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>确认订单</title>
+		<link rel="stylesheet" href="../css/content.css" />
+	</head>
+
+	<body class="clearp">
+		<header>
+			<a href="order.html" class="goback"></a>
+			<div>确认订单</div>
+		</header>
+		<section class="pay1">
+			订单总价<span>50元</span>
+		</section>
+		<section class="pay2">
+			<div>待支付<span>￥50</span></div>
+			<p>(可用积分54分)</p>
+		</section>
+		<section class="confirm-2">
+			<ul>
+				<li><label>服务时间</label><input type="text" placeholder="请选择服务时间" /></li>
+				<li><label>服务地址</label><input type="text" placeholder="请选择服务时间" /></li>
+				<li><label>选择师傅</label>
+					<select>
+						<option>林动</option>
+						<option>张三</option>
+					</select>
+				</li>
+			</ul>
+		</section>
+		<section class="confirm-2 confirm-3">
+			<ul>
+				<li><label>联系人姓名</label><input type="text" placeholder="请输入您的姓名" /></li>
+				<li><label>联系电话</label><input type="tel" placeholder="请输入您的电话" /></li>
+			</ul>
+		</section>
+		<section class="confirm-2 confirm-4">
+			<ul>
+				<li><label>备注信息</label><input type="text" placeholder="请输入其它备注信息" /></li>
+			</ul>
+		</section>
+		<section class="confirm-5">
+			<div class="photo">拍照上传<span>有图师傅能更精准服务</span></div>
+			<ul class="ch-upload">
+				<li>
+					<div class="uploader-box">
+						<input id="uploaderInput" class="upload" type="file" accept="image/*" multiple="">
+					</div>
+				</li>
+				<li>
+					<div class="uploader-box">
+						<input id="uploaderInput" class="upload" type="file" accept="image/*" multiple="">
+					</div>
+				</li>
+				<li>
+					<div class="uploader-box">
+						<input id="uploaderInput" class="upload" type="file" accept="image/*" multiple="">
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="confirm-6">
+			<dl>
+				<dt>温馨提示：</dt>
+				<dd>请仔细核对您的联系方式，并保持电话畅通，师傅上门前会联系您沟通维修事宜。</dd>
+			</dl>
+		</section>
+		<section class="confirm-7">
+			<div>
+				<input value="-" type="button" id="jian">
+				<input type="number" value="0" id="" name="" class="num">
+				<input value="+" type="button" id="jia">
+			</div>
+			<button>去支付</button>
+		</section>
+	</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>我的服务卡</title>
+		<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+		<link rel="stylesheet" href="../css/content.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="personalcenter.html" class="goback"></a>
+			<div>我的服务卡</div>
+		</header>
+		<section class="card-1">
+			<a href="#" class="on">可用服务卡</a>
+			<a href="#">历史服务卡</a>
+		</section>
+		<section class="card-2">
+			<ul class="usable">
+				<li>
+					<div class="describe">
+						<dl>
+							<dt>年终畅享卡</dt>
+							<dd>编号：15699945952632016-12-12 <span>至</span> 2017-08-30</dd>
+						</dl>
+						<dl>
+							<dt>服务须知</dt>
+							<dd>
+								<p>1、年卡和积分不可同时使用。 </p>
+								<p>2、年卡实名制仅限本人使用，不得转让或出售。</p>
+							</dd>
+							<i class="open"></i>
+						</dl>
+					</div>
+					<div class="describe-2">
+						<p>服务内容一：油烟机清洗</p>
+						<p>服务内容二：电视机年保，机年保，机年保，机年保</p>
+						<p>服务内容三：油烟机清洗烟机清洗，烟机清洗</p>
+						<p>服务内容四：电视机年保</p>
+					</div>
+				</li>
+				<li>
+					<div class="describe">
+						<dl>
+							<dt>年终畅享卡</dt>
+							<dd>编号：15699945952632016-12-12 <span>至</span> 2017-08-30</dd>
+						</dl>
+						<dl>
+							<dt>服务须知</dt>
+							<dd>
+								<p>1、年卡和积分不可同时使用。 </p>
+								<p>2、年卡实名制仅限本人使用，不得转让或出售。</p>
+							</dd>
+							<i class="open"></i>
+						</dl>
+					</div>
+					<div class="describe-2">
+						<p>服务内容一：油烟机清洗</p>
+						<p>服务内容二：电视机年保，机年保，机年保，机年保</p>
+						<p>服务内容三：油烟机清洗烟机清洗，烟机清洗</p>
+						<p>服务内容四：电视机年保</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="usable history">
+				<li>
+					<div class="describe">
+						<dl>
+							<dt>年终畅享卡</dt>
+							<dd>编号：15699945952632016-12-12 <span>至</span> 2017-08-30</dd>
+						</dl>
+						<dl>
+							<dt>服务须知</dt>
+							<dd>
+								<p>1、年卡和积分不可同时使用。 </p>
+								<p>2、年卡实名制仅限本人使用，不得转让或出售。</p>
+							</dd>
+							<i class="open"></i>
+						</dl>
+					</div>
+					<div class="describe-2">
+						<p>服务内容一：油烟机清洗</p>
+						<p>服务内容二：电视机年保，机年保，机年保，机年保</p>
+						<p>服务内容三：油烟机清洗烟机清洗，烟机清洗</p>
+						<p>服务内容四：电视机年保</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<script>
+			var li = $('.usable li');
+			li.click(function() {
+				if($(this).find('i').hasClass('on')) {
+					$(this).find('i').removeClass('on');
+					$(this).find('.describe').css('border-bottom', 'none');
+					$(this).find('.describe-2').hide('slow');
+				} else {
+					$(this).find('i').siblings().removeClass('on');
+					$(this).find('i').addClass('on');
+					$(this).find('.describe').css('border-bottom', '1px dashed #ececec');
+					$(this).find('.describe-2').show('slow');
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>支付</title>
+		<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+		<link rel="stylesheet" href="../css/content.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="order.html" class="goback"></a>
+			<div>支付</div>
+		</header>
+		<section class="pay1">
+			订单总价<span>50元</span>
+		</section>
+		<section class="pay2">
+			<div>待支付<span>￥50</span></div>
+		</section>
+		<section class="pay3">
+			<div>是否使用积分抵扣 <label><input type="checkbox" /></label></div>
+			<div>可使用积分<span>54</span>分<label><input type="text" placeholder="请输入使用积分" /></label></div>
+		</section>
+		<section class="pay">
+			<div>选择支付方式</div>
+			<ul>
+				<li>
+					<a href="#">微信支付</a>
+					<i class="on"></i>
+				</li>
+				<li>
+					<a href="#">支付宝支付</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">余额支付</a>
+					<i></i>
+				</li>
+			</ul>
+		</section>
+		<section class="ol-btn">
+			<button>确认支付</button>
+		</section>
+		<div class="shade"></div>
+		<div class="popup">
+			<span class="pay-success"></span>
+			<p>支付成功！</p>
+			<div class="pop-btn">
+				<a href="order.html" class="pop-blue">查看订单</a>
+				<a href="../index.html" class="pop-all">返回首页</a>
+			</div>
+		</div>
+		<div class="popup">
+			<span class="pay-fail"></span>
+			<p>支付失败！<span>支付失败，请重新支付</span></p>
+			<div class="pop-btn">
+				<a href="pay.html" class="pop-blue">重新支付</a>
+				<a href="../index.html" class="pop-all">返回首页</a>
+			</div>
+		</div>
+		<script>
+			var a = $(".pay ul li");
+			a.click(function() {
+				$(this).siblings().find("i").removeClass("on");
+				$(this).find("i").addClass("on");
+			})
+		</script>
+	</body>
+
+</html>

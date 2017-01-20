@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>主页</title>
+		<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+		<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+		<link rel="stylesheet" href="css/content.css" />
+	</head>
+
+	<body>
+		<section class="sform">
+			<form>
+				<div>
+					<div class="lss">
+						<select>
+							<option>金华</option>
+							<option>杭州</option>
+						</select>
+					</div>
+					<div class="sbtn">
+						<input placeholder="搜索您所需要的服务" />
+						<button></button>
+					</div>
+					<a href="#" class="msg"><i>4</i></a>
+				</div>
+			</form>
+		</section>
+		<section class="focus" id="slideBox">
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="#"><img src="images/banner.png" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="hd" style="display: none;">
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<script>
+			TouchSlide({
+				slideCell: "#slideBox",
+				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPage: true, //自动分页
+				autoPlay: true //自动播放
+			});
+		</script>
+		<section class="menu" id="slideMenu">
+			<div class="bd">
+				<ul>
+					<li>
+						<ul class="fmenu">
+							<li>
+								<a href="#"><img src="images/3.png" /><span>家电</span></a>
+							</li>
+							<li>
+								<a href="#">家具</a>
+							</li>
+							<li>
+								<a href="#">卫浴</a>
+							</li>
+							<li>
+								<a href="#">五金</a>
+							</li>
+							<li>
+								<a href="#">办公</a>
+							</li>
+							<li>
+								<a href="#">厨具</a>
+							</li>
+							<li>
+								<a href="pipe.html">管道</a>
+							</li>
+							<li>
+								<a href="#">墙面</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<ul class="smenu">
+							<li>
+								<a href="#">线路</a>
+							</li>
+							<li>
+								<a href="#">灯具</a>
+							</li>
+							<li>
+								<a href="#">门窗</a>
+							</li>
+							<li>
+								<a href="#">材料配件</a>
+							</li>
+							<li>
+								<a href="#">智能</a>
+							</li>
+							<li>
+								<a href="#">监控</a>
+							</li>
+							<li>
+								<a href="#">其他</a>
+							</li>
+						</ul>
+				</ul>
+			</div>
+			<div class="hd">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+		<script>
+			TouchSlide({
+				slideCell: "#slideMenu",
+				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPage: true, //自动分页
+				autoPlay: false //自动播放
+			});
+		</script>
+		<section class="pic">
+			<a href="settled.html"><img src="images/pic.png" /></a>
+			<a href="#"><img src="images/pic1.png" /></a>
+		</section>
+		<section class="tw">
+			<ul>
+				<li>
+					<a href="#"><img src="images/pic19.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/pic20.png" /></a>
+				</li>
+			</ul>
+		</section>
+		<section class="push">
+			<div class="tit">
+				精品服务推荐<span>Recommend</span>
+			</div>
+			<ul class="push-list">
+				<li>
+					<div>
+						<img src="images/pic2.png" />
+					</div>
+					<dl>
+						<dt>墙面翻新限时约会,你值得拥有</dt>
+						<dd>
+							<p>亮丽如新，重新获得新家感觉</p>
+							<p><span>398</span>元起</p>
+						</dd>
+						<button class="btn">预约下单</button>
+					</dl>
+				</li>
+				<li>
+					<div>
+						<img src="images/pic2.png" />
+					</div>
+					<dl>
+						<dt>墙面翻新限时约会,你值得拥有</dt>
+						<dd>
+							<p>亮丽如新，重新获得新家感觉</p>
+							<p><span>398</span>元起</p>
+						</dd>
+						<button class="btn">预约下单</button>
+					</dl>
+				</li>
+			</ul>
+		</section>
+		<menu class="foot-menu">
+			<a href="index.html" class="on">首页</a>
+			<a href="found.html">发现</a>
+			<a href="user/order.html">订单</a>
+			<a href="user/personalcenter.html">个人</a>
+		</menu>
+	</body>
+
+</html>

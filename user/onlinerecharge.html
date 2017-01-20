@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>在线充值</title>
+		<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+		<link rel="stylesheet" href="../css/content.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="personalcenter.html" class="goback"></a>
+			<div>在线充值</div>
+		</header>
+		<section class="coin">
+			<div>充值金额<input type="text" placeholder="请填写充值金额" />元</div>
+		</section>
+		<section class="pay">
+			<div>选择充值方式</div>
+			<ul>
+				<li>
+					<a href="#">微信支付</a>
+					<i class="on"></i>
+				</li>
+				<li>
+					<a href="#">支付宝支付</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">余额支付</a>
+					<i></i>
+				</li>
+			</ul>
+		</section>
+		<section class="ol-btn">
+			<button>充值</button>
+		</section>
+
+		<script>
+			var a = $(".pay ul li");
+			a.click(function() {
+				$(this).siblings().find("i").removeClass("on");
+				$(this).find("i").addClass("on");
+			})
+		</script>
+	</body>
+
+</html>

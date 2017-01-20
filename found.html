@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>发现</title>
+		<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+		<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+		<link rel="stylesheet" href="css/content.css" />
+	</head>
+
+	<body>
+		<nav>
+			<a href="#">全部</a>
+			<a href="#">服务案例</a>
+			<a href="#">优惠活动</a>
+			<a href="#">服务套餐</a>
+		</nav>
+		<section class="focus" id="slideBox">
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="#"><img src="images/banner2.png" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="hd" style="display: none;">
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<script>
+			TouchSlide({
+				slideCell: "#slideBox",
+				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPage: true, //自动分页
+				autoPlay: true //自动播放
+			});
+		</script>
+		<section class="push t">
+			<div class="tit">
+				精品服务推荐<span>Recommend</span>
+			</div>
+			<ul class="push-list">
+				<li>
+					<div>
+						<img src="images/pic2.png" />
+					</div>
+					<dl>
+						<dt>墙面翻新限时约会,你值得拥有<span>30/50</span></dt>
+						<dd>
+							<p>亮丽如新，重新获得新家感觉</p>
+							<p><span>398</span>元起</p>
+						</dd>
+						<a href="apply.html"><button class="btn">立即报名</button></a>
+					</dl>
+				</li>
+			</ul>
+		</section>
+		<section class="pics">
+			<div>金华星月花园墙面翻新<span>亮丽如新，重新获得新家感觉</span></div>
+			<ul class="apics">
+				<li>
+					<a href="#"><img src="images/pic3.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/pic4.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/pic5.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/pic6.png" /></a>
+				</li>
+			</ul>
+		</section>
+		<section class="pic">
+			<div class="pic-list">
+				<a href="#"><img src="images/pic7.png" /></a>
+				<div class="tit1">全年无限次数检修线路 <button>立即购买</button></div>
+			</div>
+			<div class="pic-list">
+				<a href="#"><img src="images/pic8.png" /></a>
+				<div class="tit1">全年无限次数检修线路 <button>立即购买</button></div>
+			</div>
+		</section>
+		<menu class="foot-menu">
+			<a href="index.html">首页</a>
+			<a href="found.html" class="on">发现</a>
+			<a href="user/order.html">订单</a>
+			<a href="user/personalcenter.html">个人</a>
+		</menu>
+	</body>
+
+</html>

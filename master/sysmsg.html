@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+		<title>系统消息</title>
+		<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+		<link rel="stylesheet" href="../css/content.css" />
+	</head>
+
+	<body>
+		<header>
+			<div>系统消息</div>
+		</header>
+		<section class="master-sys">
+			<div class="sys-0">
+				<a href="#">系统消息</a>
+				<dl>
+					<dt>您有可领取的卡券</dt>
+					<dd>感谢您使用，1张9.8折卡券已放入您的个人中心，点我使用</dd>
+				</dl>
+			</div>
+			<div class="sys-1">
+				<a href="#">交易消息</a>
+				<dl>
+					<dt>您有可领取的卡券</dt>
+					<dd>感谢您使用，1张9.8折卡券已放入您的个人中心，点我使用</dd>
+				</dl>
+			</div>
+			<div class="sys-2">
+				<a href="#">通知消息</a>
+				<dl>
+					<dt>您有可领取的卡券</dt>
+					<dd>感谢您使用，1张9.8折卡券已放入您的个人中心，点我使用</dd>
+				</dl>
+			</div>
+		</section>
+		<menu class="foot-menu mmenu">
+			<a href="master-order.html">订单中心</a>
+			<a href="sysmsg.html" class="on">系统消息</a>
+			<a href="myorder.html">我的订单</a>
+			<a href="personal.html">个人中心</a>
+		</menu>
+		<script>
+			var a = $('.master-sys div a');
+			var b = $('.master-sys div');
+			a.click(function() {
+				if($(this).parent().hasClass('on')) {
+					$(this).parent().removeClass('on');
+					$(this).parent().find('dl').hide('slow');
+				} else {
+					$(this).parent().addClass('on');
+					$(this).parent().find('dl').show('slow');
+				}
+
+			})
+		</script>
+	</body>
+
+</html>
